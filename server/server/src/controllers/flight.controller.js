@@ -2,11 +2,11 @@ const Flight = require("../models/flight.model");
 
 exports.searchFlights = async (req, res) => {
   try {
-    const { from, to, date } = req.query;
+    const { source, destination, date } = req.query;
     const query = {};
 
-    if (from) query.departureAirportCode = from.toUpperCase();
-    if (to) query.arrivalAirportCode = to.toUpperCase();
+    if (source) query.departureAirportCode = source.toUpperCase();
+    if (destination) query.arrivalAirportCode = destination.toUpperCase();
     if (date) {
       const start = new Date(date);
       const end = new Date(date);

@@ -3,7 +3,7 @@ import styles from "../../Styles/landing.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { error } from "../../Utils/notification";
-import safty from "../../Images/safetyplus.svg"
+import safty from "../../Images/safetyplus.svg";
 
 function Slider() {
   const [hover, sethover] = useState(false);
@@ -23,7 +23,6 @@ function Slider() {
   useEffect(() => {
     let mindate = new Date().toISOString().split("T")[0];
     let maxdate = new Date().toISOString().split("T")[0];
-    // console.log(mindate, maxdate);
     setdate(mindate);
     setdateinfo({
       ...dateinfo,
@@ -76,7 +75,6 @@ function Slider() {
       res = res.data;
       setOutput(res);
       setShowNames(true);
-      // console.log(output);
     } catch (err) {
       console.log(err);
     }
@@ -88,7 +86,6 @@ function Slider() {
         destination,
       });
       res = res.data;
-
       setOutputdes(res);
       setShowNamesdes(true);
     } catch (err) {
@@ -104,6 +101,11 @@ function Slider() {
     sethover(false);
   }
 
+  function handledateclicked() {
+    setShowNamesdes(false);
+    setShowNames(false);
+  }
+
   function handleclicked() {
     if (date === "" || destination === "" || source === "") {
       error("Please Fill All The Details");
@@ -113,30 +115,11 @@ function Slider() {
       error("Source And Destination Can't Be Same");
       return;
     }
-    setsource("");
-    getcityinfo(source, destination, date);
-  }
 
-  async function getcityinfo(source, destination, date) {
-    try {
-      let res = await axios.post("https://blue-bus.onrender.com/city/showcity", {
-        source,
-        destination,
-        date,
-      });
-      if (res.data.status === "success") {
-        navigate({
-          pathname: "/selectbus",
-          search: `?from=${source}&to=${destination}&date=${date}`,
-        });
-      } else {
-        setsource("");
-        setdestination("");
-        error("City Not Found");
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    navigate({
+      pathname: "/flights",
+      search: `?source=${source}&destination=${destination}&date=${date}`,
+    });
   }
 
   function handlecityclicked(name) {
@@ -144,16 +127,13 @@ function Slider() {
     setsource(name);
     setShowNames(false);
   }
+
   function handlecityclicked1(name) {
     setCityDesclicked(true);
     setdestination(name);
     setShowNamesdes(false);
   }
 
-  function handledateclicked() {
-    setShowNamesdes(false);
-    setShowNames(false);
-  }
   return (
     <>
       <div className={styles.Carousel}>
@@ -163,9 +143,7 @@ function Slider() {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-
             <div className="carousel-item active" data-bs-interval="3000">
-              {" "}
               <img
                 src={require("../../Images/photo-1590523277543-a94d2e4eb00b.avif")}
                 className="object-fit-cover"
@@ -176,7 +154,6 @@ function Slider() {
               />
             </div>
             <div className="carousel-item" data-bs-interval="3000">
-              {" "}
               <img
                 src={require("../../Images/photo-1544091441-9cca7fbe8923.avif")}
                 className="object-fit-cover"
@@ -187,7 +164,6 @@ function Slider() {
               />
             </div>
             <div className="carousel-item" data-bs-interval="3000">
-              {" "}
               <img
                 src={require("../../Images/photo-1600073957488-45273df3d014.avif")}
                 className="object-fit-cover"
@@ -198,41 +174,39 @@ function Slider() {
               />
             </div>
           </div>
-          {hover ? (
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="prev"
-              onMouseOver={handelhover}
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-          ) : (
-            <span className="visually-hidden">Previous</span>
-          )}
-          {hover ? (
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleAutoplaying"
-              data-bs-slide="next"
-              onMouseOver={handelhover}
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          ) : (
-            <span className="visually-hidden">Next</span>
+
+          {hover && (
+            <>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+                onMouseOver={handelhover}
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+                onMouseOver={handelhover}
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </>
           )}
         </div>
+
         <div className={styles.data}>
           <input
             type="text"
@@ -244,9 +218,9 @@ function Slider() {
             }}
             className={styles.inputsource}
           />
-          {showName && output.length != 0 && (
+          {showName && output.length !== 0 && (
             <div className={styles.names}>
-              {output?.map((item, i) => (
+              {output.map((item, i) => (
                 <div
                   style={{ cursor: "pointer" }}
                   onClick={() => handlecityclicked(item.name)}
@@ -260,6 +234,7 @@ function Slider() {
               ))}
             </div>
           )}
+
           <input
             type="text"
             placeholder="Destination"
@@ -270,9 +245,9 @@ function Slider() {
             }}
             className={styles.inputsource1}
           />
-          {showNamedes && outputdes.length != 0 && (
+          {showNamedes && outputdes.length !== 0 && (
             <div className={styles.names1}>
-              {outputdes?.map((item, i) => (
+              {outputdes.map((item, i) => (
                 <div
                   style={{ cursor: "pointer" }}
                   onClick={() => handlecityclicked1(item.name)}
@@ -286,39 +261,19 @@ function Slider() {
               ))}
             </div>
           )}
+
           <input
             type="date"
             value={date}
             min={dateinfo.mindate}
             onChange={(e) => setdate(e.target.value)}
-            onClick={() => handledateclicked()}
+            onClick={handledateclicked}
           />
           <button onClick={handleclicked}>Search</button>
         </div>
-        {/* <div className={styles.infodiv}>
-          <div>
-            {" "}
-            <img
-              src={safty}
-              alt="shield"
-            />
-          </div>
-          <div>
-            <h4>Introducing Safety+ Program</h4>
-            <p>
-              A unique certification program that ensures safety in all buses
-            </p>
-          </div>
-          <div>
-            <div>
-              {" "}
-              <button>know More</button>
-            </div>
-          </div>
-        </div> */}
-        Hero section content goes here
       </div>
     </>
   );
 }
+
 export default Slider;
