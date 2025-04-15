@@ -35,7 +35,10 @@ function Slider() {
       setCityclicked(false);
       return;
     }
-    const timerID = setTimeout(() => handleGetRequest(source, setOutput, setShowNames), 500);
+    const timerID = setTimeout(
+      () => handleGetRequest(source, setOutput, setShowNames),
+      500
+    );
     return () => clearTimeout(timerID);
   }, [source]);
 
@@ -48,14 +51,17 @@ function Slider() {
       setCityDesclicked(false);
       return;
     }
-    const timerID = setTimeout(() => handleGetRequest(destination, setOutputdes, setShowNamesdes), 500);
+    const timerID = setTimeout(
+      () => handleGetRequest(destination, setOutputdes, setShowNamesdes),
+      500
+    );
     return () => clearTimeout(timerID);
   }, [destination]);
 
   const handleGetRequest = async (query, setter, toggle) => {
     try {
-      const res = await axios.post("https://blue-bus.onrender.com/city", {
-        source: query
+      const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/city`, {
+        source: query,
       });
       setter(res.data);
       toggle(true);
@@ -81,11 +87,14 @@ function Slider() {
     }
 
     try {
-      const res = await axios.post("https://blue-bus.onrender.com/city/showcity", {
-        source,
-        destination,
-        date
-      });
+      const res = await axios.post(
+        `${process.env.REACT_APP_SERVER_URL}/city/showcity`,
+        {
+          source,
+          destination,
+          date,
+        }
+      );
 
       if (res.data.status === "success") {
         navigate({
@@ -109,7 +118,11 @@ function Slider() {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          {["photo-1590523277543-a94d2e4eb00b.avif", "photo-1544091441-9cca7fbe8923.avif", "photo-1600073957488-45273df3d014.avif"].map((img, i) => (
+          {[
+            "photo-1590523277543-a94d2e4eb00b.avif",
+            "photo-1544091441-9cca7fbe8923.avif",
+            "photo-1600073957488-45273df3d014.avif",
+          ].map((img, i) => (
             <div className={`carousel-item ${i === 0 ? "active" : ""}`} key={i}>
               <img
                 src={require(`../../Images/${img}`)}
@@ -131,7 +144,10 @@ function Slider() {
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="prev"
             >
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
             </button>
             <button
               className="carousel-control-next"
@@ -139,7 +155,10 @@ function Slider() {
               data-bs-target="#carouselExampleAutoplaying"
               data-bs-slide="next"
             >
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
             </button>
           </>
         )}
@@ -148,13 +167,17 @@ function Slider() {
       {/* Trip Toggle */}
       <div className={styles.tripTypeToggle}>
         <button
-          className={`${styles.toggleBtn} ${tripType === "one-way" ? styles.active : ""}`}
+          className={`${styles.toggleBtn} ${
+            tripType === "one-way" ? styles.active : ""
+          }`}
           onClick={() => setTripType("one-way")}
         >
           One Way
         </button>
         <button
-          className={`${styles.toggleBtn} ${tripType === "round-trip" ? styles.active : ""}`}
+          className={`${styles.toggleBtn} ${
+            tripType === "round-trip" ? styles.active : ""
+          }`}
           onClick={() => setTripType("round-trip")}
         >
           Round Trip
@@ -173,8 +196,15 @@ function Slider() {
           {showName && (
             <div className={styles.names}>
               {output.map((item, i) => (
-                <div key={i} onClick={() => handleCityClick(item.name, setsource, setShowNames)}>
-                  <h6>{item.name}, {item.state}</h6>
+                <div
+                  key={i}
+                  onClick={() =>
+                    handleCityClick(item.name, setsource, setShowNames)
+                  }
+                >
+                  <h6>
+                    {item.name}, {item.state}
+                  </h6>
                 </div>
               ))}
             </div>
@@ -191,8 +221,15 @@ function Slider() {
           {showNamedes && (
             <div className={styles.names1}>
               {outputdes.map((item, i) => (
-                <div key={i} onClick={() => handleCityClick(item.name, setdestination, setShowNamesdes)}>
-                  <h6>{item.name}, {item.state}</h6>
+                <div
+                  key={i}
+                  onClick={() =>
+                    handleCityClick(item.name, setdestination, setShowNamesdes)
+                  }
+                >
+                  <h6>
+                    {item.name}, {item.state}
+                  </h6>
                 </div>
               ))}
             </div>

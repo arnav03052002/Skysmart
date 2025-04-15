@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import styles from "../Styles/landing.module.css";
 
 function Footer() {
-  const navigate = useNavigate();
   return (
     <>
       <footer
@@ -16,11 +15,12 @@ function Footer() {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div>
                 <h3>
-                  <span style={{ color: "#5266FA" }}>Smart</span>Sky
-                  </h3>
+                  Smart<span style={{ color: "#5266FA" }}>Sky</span>
+                </h3>
                 <p className="mb-30 footer-desc">
-                  This is the best site for booking a flight for your travel.
-                  Travel safe and with comfort.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  soluta facilis eos quia optio iusto odit atque eum tempore,
+                  quisquam officiis vero veniam hic,
                 </p>
               </div>
             </div>
@@ -29,7 +29,13 @@ function Footer() {
                 <h4>Book</h4>
                 <ul className="list-unstyled">
                   <li>
-                    <p className="text-decoration-none">Flight Ticket</p>
+                    <p className="text-decoration-none">Bus Ticket</p>
+                  </li>
+                  <li>
+                    <p className="text-decoration-none">Bus hire</p>
+                  </li>
+                  <li>
+                    <p className="text-decoration-none">Tempo Travellers</p>
                   </li>
                   <li>
                     <p className="text-decoration-none">Car Rentals</p>
@@ -42,7 +48,7 @@ function Footer() {
                 <h4>About</h4>
                 <ul className="list-unstyled">
                   <li>
-                  <p style={{ cursor: 'pointer' }} onClick={() => navigate("/about")} className="text-decoration-none">About us</p>                  
+                    <p className="text-decoration-none">About us</p>
                   </li>
                   <li>
                     <p className="text-decoration-none">Contact us</p>
@@ -70,6 +76,13 @@ function Footer() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div className="d-flex justify-content-center">
+            <div className="copyright">
+              <p className={styles.companyinfo}>
+                2023 ibibogroup All rights reserved company.
+              </p>
             </div>
           </div>
         </div>

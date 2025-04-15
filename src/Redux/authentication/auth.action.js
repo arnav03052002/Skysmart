@@ -9,7 +9,10 @@ import { error, success } from "../../Utils/notification";
 
 export const loginAPI = (data, navigate) => async (dispatch) => {
   try {
-    let response = await axios.post("http://localhost:8080/user/login", data);
+    let response = await axios.post(
+      `${process.env.REACT_APP_SERVER_URL}/user/login`,
+      data
+    );
     // console.log(response);
     if (response.data.status === "Failed") {
       error(response.data.message);
@@ -39,4 +42,3 @@ export const loginAPI = (data, navigate) => async (dispatch) => {
 };
 
 export const logoutAPI = () => ({ type: AUTH_LOG_OUT });
-
