@@ -1,0 +1,530 @@
+[
+  {
+    "name": "AHMEDABAD",
+    "iataCode": "AMD",
+    "country": "INDIA",
+    "latitude": 23.07723,
+    "longitude": 72.63473,
+    "timezone": "+05:30"
+  },
+  {
+    "name": "ATLANTA",
+    "iataCode": "ATL",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 33.64112,
+    "longitude": -84.42277,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "AUSTIN",
+    "iataCode": "AUS",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 30.19445,
+    "longitude": -97.67,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "BARCELONA",
+    "iataCode": "BCN",
+    "country": "SPAIN",
+    "latitude": 41.29695,
+    "longitude": 2.07834,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "BEIJING",
+    "iataCode": "BJS",
+    "country": "CHINA",
+    "latitude": 39.9075,
+    "longitude": 116.3972,
+    "timezone": "+08:00"
+  },
+  {
+    "name": "BERLIN",
+    "iataCode": "BER",
+    "country": "GERMANY",
+    "latitude": 52.36223,
+    "longitude": 13.50167,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "CHARLOTTE",
+    "iataCode": "CLT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 35.2207,
+    "longitude": -80.94413,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "CHENGDU",
+    "iataCode": "CTU",
+    "country": "CHINA",
+    "latitude": 30.57862,
+    "longitude": 103.9472,
+    "timezone": "+08:00"
+  },
+  {
+    "name": "CHENNAI",
+    "iataCode": "MAA",
+    "country": "INDIA",
+    "latitude": 12.98834,
+    "longitude": 80.16584,
+    "timezone": "+05:30"
+  },
+  {
+    "name": "CHICAGO",
+    "iataCode": "CHI",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 41.85,
+    "longitude": -87.65,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "COLUMBUS",
+    "iataCode": "CMH",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 39.99806,
+    "longitude": -82.88361,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "COLORADO SPRINGS",
+    "iataCode": "COS",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 38.80584,
+    "longitude": -104.7008,
+    "timezone": "-06:00"
+  },
+  {
+    "name": "DALLAS",
+    "iataCode": "DFW",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 32.89695,
+    "longitude": -97.03805,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "DETROIT",
+    "iataCode": "DTT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 42.33139,
+    "longitude": -83.04583,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "DUBLIN",
+    "iataCode": "DBN",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 32.56417,
+    "longitude": -82.98666,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "EL PASO",
+    "iataCode": "ELP",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 31.80723,
+    "longitude": -106.3775,
+    "timezone": "-06:00"
+  },
+  {
+    "name": "FRESNO",
+    "iataCode": "FAT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 36.77612,
+    "longitude": -119.7192,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "FORT WORTH",
+    "iataCode": "FTW",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 32.81917,
+    "longitude": -97.36194,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "GUANGZHOU",
+    "iataCode": "CAN",
+    "country": "CHINA",
+    "latitude": 23.3925,
+    "longitude": 113.2989,
+    "timezone": "+08:00"
+  },
+  {
+    "name": "GENOA",
+    "iataCode": "GOA",
+    "country": "ITALY",
+    "latitude": 44.415,
+    "longitude": 8.85028,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "HOUSTON",
+    "iataCode": "HOU",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 29.64556,
+    "longitude": -95.27888,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "INDIANAPOLIS",
+    "iataCode": "IND",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 39.71723,
+    "longitude": -86.29444,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "ISTANBUL",
+    "iataCode": "IST",
+    "country": "TURKIYE",
+    "latitude": 41.26028,
+    "longitude": 28.74195,
+    "timezone": "+03:00"
+  },
+  {
+    "name": "JACKSONVILLE",
+    "iataCode": "JAX",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 30.49195,
+    "longitude": -81.68555,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "JAIPUR",
+    "iataCode": "JAI",
+    "country": "INDIA",
+    "latitude": 26.82417,
+    "longitude": 75.81223,
+    "timezone": "+05:30"
+  },
+  {
+    "name": "KANSAS CITY",
+    "iataCode": "MKC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 39.12112,
+    "longitude": -94.59166,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "KING CITY",
+    "iataCode": "KIC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 36.23001,
+    "longitude": -121.1,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "KOLKATA",
+    "iataCode": "CCU",
+    "country": "INDIA",
+    "latitude": 22.65473,
+    "longitude": 88.44667,
+    "timezone": "+05:30"
+  },
+  {
+    "name": "LAKE GENEVA",
+    "iataCode": "XES",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 42.56667,
+    "longitude": -88.41972,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "LA PAZ",
+    "iataCode": "LAP",
+    "country": "MEXICO",
+    "latitude": 24.07278,
+    "longitude": -110.3625,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "ALLENTOWN",
+    "iataCode": "ABE",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 40.6525,
+    "longitude": -75.43555,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "LONG BEACH",
+    "iataCode": "LGB",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 33.8175,
+    "longitude": -118.1522,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "LOS ANGELES",
+    "iataCode": "LAX",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 33.9425,
+    "longitude": -118.4081,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "MADRID",
+    "iataCode": "MAD",
+    "country": "SPAIN",
+    "latitude": 40.49195,
+    "longitude": -3.56944,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "MELBOURNE",
+    "iataCode": "MLB",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 28.10278,
+    "longitude": -80.64583,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "MIAMI",
+    "iataCode": "MIA",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 25.79334,
+    "longitude": -80.28999,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "MILWAUKEE",
+    "iataCode": "MKE",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 42.94723,
+    "longitude": -87.89666,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "MINNEAPOLIS/ST PAUL",
+    "iataCode": "MSP",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 44.88195,
+    "longitude": -93.20835,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "MUMBAI",
+    "iataCode": "BOM",
+    "country": "INDIA",
+    "latitude": 19.08862,
+    "longitude": 72.86806,
+    "timezone": "+05:30"
+  },
+  {
+    "name": "MUSCATINE",
+    "iataCode": "MUT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 41.35,
+    "longitude": -91.13,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "NASHVILLE",
+    "iataCode": "BNA",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 36.11945,
+    "longitude": -86.68416,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "NEW ORLEANS",
+    "iataCode": "MSY",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 29.99334,
+    "longitude": -90.25805,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "NEW YORK",
+    "iataCode": "NYC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 40.71417,
+    "longitude": -74.00583,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "OKLAHOMA CITY",
+    "iataCode": "OKC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 35.39306,
+    "longitude": -97.60083,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "OMAHA",
+    "iataCode": "OMA",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 41.30112,
+    "longitude": -95.89861,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "PANAMA CITY",
+    "iataCode": "ECP",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 30.35778,
+    "longitude": -85.79888,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "PARIS",
+    "iataCode": "PAR",
+    "country": "FRANCE",
+    "latitude": 48.85334,
+    "longitude": 2.34889,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "PERTH",
+    "iataCode": "PSL",
+    "country": "UNITED KINGDOM",
+    "latitude": 56.4,
+    "longitude": -3.46694,
+    "timezone": "+01:00"
+  },
+  {
+    "name": "PHILADELPHIA",
+    "iataCode": "PHL",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 39.87834,
+    "longitude": -75.24027,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "PHOENIX",
+    "iataCode": "PHX",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 33.43556,
+    "longitude": -111.9981,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "PORTLAND",
+    "iataCode": "PDX",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 45.58917,
+    "longitude": -122.5936,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "RALEIGH DURHAM",
+    "iataCode": "RDU",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 35.87945,
+    "longitude": -78.78722,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "ROME",
+    "iataCode": "ROM",
+    "country": "ITALY",
+    "latitude": 41.89195,
+    "longitude": 12.51139,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "SACRAMENTO",
+    "iataCode": "SAC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 38.51334,
+    "longitude": -121.4975,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "SAN ANTONIO",
+    "iataCode": "SAT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 29.53389,
+    "longitude": -98.47,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "SAN DIEGO",
+    "iataCode": "SAN",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 32.73223,
+    "longitude": -117.1975,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "SAN FRANCISCO",
+    "iataCode": "SFO",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 37.61889,
+    "longitude": -122.375,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "SAN JOSE",
+    "iataCode": "SJC",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 37.36195,
+    "longitude": -121.9289,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "SANTIAGO DE COMPOSTELA",
+    "iataCode": "SCQ",
+    "country": "SPAIN",
+    "latitude": 42.89778,
+    "longitude": -8.41805,
+    "timezone": "+02:00"
+  },
+  {
+    "name": "SEATTLE",
+    "iataCode": "SEA",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 47.44889,
+    "longitude": -122.3094,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "SHENZHEN",
+    "iataCode": "SZX",
+    "country": "CHINA",
+    "latitude": 22.63917,
+    "longitude": 113.8106,
+    "timezone": "+08:00"
+  },
+  {
+    "name": "TULSA",
+    "iataCode": "TUL",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 36.19834,
+    "longitude": -95.88805,
+    "timezone": "-05:00"
+  },
+  {
+    "name": "TUCSON",
+    "iataCode": "TUS",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 32.11612,
+    "longitude": -110.9411,
+    "timezone": "-07:00"
+  },
+  {
+    "name": "URUMQI",
+    "iataCode": "URC",
+    "country": "CHINA",
+    "latitude": 43.90723,
+    "longitude": 87.47417,
+    "timezone": "+08:00"
+  },
+  {
+    "name": "VIRGINIA BEACH",
+    "iataCode": "NTU",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 36.82084,
+    "longitude": -76.03361,
+    "timezone": "-04:00"
+  },
+  {
+    "name": "WICHITA",
+    "iataCode": "ICT",
+    "country": "UNITED STATES OF AMERICA",
+    "latitude": 37.65,
+    "longitude": -97.43305,
+    "timezone": "-05:00"
+  }
+]
